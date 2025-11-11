@@ -26,7 +26,7 @@ class ListLinked : public List<T> {
 
 				    T operator[](int pos) const {
 					            if (pos < 0 || pos >= n) {
-							                throw std::out_of_range("Indice fuera del intervalo");
+							                throw std::out_of_range("Posición inválida");
 									        }
 						            Node<T>* current = first;
 							            for (int i = 0; i < pos; i++) {
